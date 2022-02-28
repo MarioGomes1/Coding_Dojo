@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+#container {
+  height: 1500px;
+  padding: 0 20p;
+}
+
+.navbar {
+  /* position: fixed; */
+  background-color: black;
+  justify-content: space-between;
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 7%;
+  padding: 0 19%;
+  align-items: center;
+  z-index: 10;
+  height: 75px;
+}
+
+#navbar_links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+#navbar_links a {
+  text-decoration: none;
+  color: white;
+}
+a#icon {
+  font-size: 1.5rem;
+}
+#signout {
+  background-color: rgb(37 153 153);
+  color: white;
+  padding: 5px 16px;
+  margin-right: 84px;
+}
+
+#body_content {
+  margin-left: 21%;
+  width: 100%;
+  height: 796px;
+  display: flex;
+  column-gap: 3%;
+  /* justify-content: center; */
+  margin-top: 20px;
+  /* padding-left: 22px; */
+}
+
+#user_info_container {
+  width: 30%;
+  height: 100%;
+  /* margin: 0% 0 0 10%; */
+  /* margin-left: 21%; */
+}
+
+#user_info {
+  margin-bottom: 20px;
+  position: relative;
+  border: 4px solid darkgrey;
+  height: 60%;
+  background-size: 10px;
+}
+#user_info::before {
+  margin: 0;
+  left: -4px;
+  bottom: 69%;
+  height: 33%;
+  width: 101%;
+  content: "";
+  position: absolute;
+  background: #21bfbf;
+}
+
+#about_me {
+  position: relative;
+  left: 3%;
+  width: 60%;
+}
+
+.about_me_avatar {
+  border: 6px solid black;
+  width: 125px;
+  border-radius: 100%;
+  margin: 40px 0 10px 13px;
+}
+
+#about_me_info > * {
+  padding: 5px;
+}
+#about_me_info p:first-of-type {
+  /* font-weight: 400; */
+}
+#settings_icon {
+  width: 25px;
+}
+
+/* ! -------------------------------Education--------------------------------------- */
+#education {
+  height: 50%;
+  border: 4px solid darkgrey;
+}
+
+#education span:nth-child(1) {
+  position: relative;
+  bottom: 12%;
+  color: #d1cdcd;
+  margin-left: 34px;
+}
+
+#education span:nth-child(2) {
+  color: #8b8888;
+  margin-left: 20px;
+}
+li {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+#education_experience ul {
+  margin-left: 20px;
+}
+#education_experience ul li p {
+  margin-left: 20px;
+}
+
+/* !Right side--Social media container */
+#social_media_container {
+  width: 33%;
+  height: 100%;
+}
+#connection_request {
+  margin-top: 20px;
+  height: 26%;
+  width: 47%;
+  border: 2px solid gray;
+}
+
+#connection_request::before {
+  margin-bottom: -29px;
+  /* margin: 0; */
+  height: 26%;
+  width: 101%;
+  content: "";
+  background: #4c5353;
+  display: block;
+  position: relative;
+  bottom: 4px;
+  right: 3px;
+}
+
+#connection_request span:nth-of-type(1) {
+  background-color: red;
+  border-radius: 100%;
+  background: lightgray;
+  color: black;
+  display: inline-block;
+  width: 28px;
+  padding: 6px;
+}
+
+#connection_request div:first-of-type {
+  position: relative;
+  bottom: 20px;
+}
+
+#connection_request span {
+  color: white;
+  margin-left: 20px;
+}
+
+.check_close_icon {
+  background-color: lightgray;
+  border-radius: 100%;
+}
+
+.delete_accept {
+  top: -31px;
+  left: 76%;
+}
+
+#your_connections {
+  margin-top: 20px;
+  /* background: linear-gradient(to top, #ffff 75%, #4c5353 75%); */
+  height: 44%;
+  width: 47%;
+  border: 2px solid gray;
+}
+
+#your_connections span:nth-child(2) {
+  position: relative;
+  bottom: 27px;
+  color: #f0eeee;
+  margin-left: 14px;
+}
+#your_connections span:nth-child(1) {
+  position: relative;
+  bottom: 25px;
+  color: black;
+  margin-left: 18px;
+  border-radius: 100%;
+  border: 1px solid gray;
+  background-color: lightgray;
+}
+/*? SHARED STYLES*/
+.connections_avatar {
+  height: 30px;
+}
+.connection_names {
+  display: inline-block;
+}
+
+.connection_avatar_cotainer {
+  margin: 17px;
+  height: 30px;
+  margin-bottom: 0;
+}
+.card::before {
+  margin: 0;
+  height: 15%;
+  width: 101%;
+  content: "";
+  background: #4c5353;
+  display: block;
+  position: relative;
+  bottom: 4px;
+  right: 3px;
+}
+/*? SHARED STYLES*/
+
+#your_connections::before {
+  margin-bottom: -27px;
+  height: 17%;
+  width: 102%;
+  content: "";
+  background: #4c5353;
+  display: block;
+  position: relative;
+  bottom: 4px;
+  right: 3px;
+}
+
+#your_connections::after {
+  display: block;
+  /* background: red; */
+  width: 100%;
+  height: 15%;
+  content: "";
+  border: 1px solid gray;
+  position: relative;
+  top: 44px;
+}
+
+#social_media_container a {
+  /* background-color: red; */
+  position: relative;
+  bottom: 42px;
+  padding: 18px;
+}
